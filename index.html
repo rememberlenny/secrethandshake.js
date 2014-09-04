@@ -77,5 +77,16 @@ $ git checkout gh-pages
             } catch(err) {}
           </script>
 
+    <script src="javascript/gyro.js"></script>
+    <script>
+      gyro.startTracking(function(o) {
+        console.log('o.x', o.x);
+        console.log('o.y', o.y);
+        console.log('o.z', o.z);
+        console.log('o.alpha', o.alpha);
+        console.log('o.beta', o.beta);
+        console.log('o.gamma', o.gamma);
+      });
+    </script>
   </body>
 </html>
